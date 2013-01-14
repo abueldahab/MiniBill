@@ -1,4 +1,5 @@
 ![MiniBill](http://billcolumbia.com/minibill.png)
+#This is not complete, please know this before using this.
 #MiniBill
 A minimal WordPress theme ( _skeleton really, don't use this as a theme_ ). It is a stripped and adapted version of [Underscores.me](http://underscores.me) **Please understand that this would not be possible without their hard work, and most of the code you see will be theirs.**
 
