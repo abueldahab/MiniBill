@@ -1,0 +1,70 @@
+/*!
+ Theme Name: MiniBill
+ Theme URI: http://github.com/billcolumbia/MiniBill
+ Description: A minimal starting point for WordPress, adapted from Underscores.me
+ Author: Bill Columbia
+ Author URI: http://billcolumbia.com
+ Version: 0.7
+ Tags: minimal, underscores, fast, light
+ License: None, feel free to hack :)
+ */
+
+@import reset, small-menu
+
+body
+	font-size: 16px
+	line-height: 24px
+
+.site-title
+	//Should be smallest version
+	background: url(img/logo.png) no-repeat center
+	-webkit-background-size: 320px 73px
+	-o-background-size: 320px 73px
+	background-size: 320px 73px
+	height: 73px
+	margin: 20px 0 
+	overflow: hidden
+	text-indent: 100%
+	white-space: nowrap
+	
+.site-description
+	font-weight: normal 
+	
+.site-main
+	padding: 0 1em
+	
+.main-small-navigation
+	font-size: 3em
+	line-height: 1em 
+	text-align: center
+	
+.app-store-button
+	max-width: 100% 
+
+@media (max-width: 480px)
+	body
+		//Phone Size kinda sorta
+
+@media (min-width: 769px)
+	body
+		//Above iPad
+	h3
+		font-size: 3em 
+	.site-title
+		//Should be larger
+		// background: url(img/logo@2x.png) no-repeat center
+		// -webkit-background-size: 640px 147px 
+		// -o-background-size: 640px 147px 
+		// background-size: 640px 147px
+		// height: 200px
+		// //Don't forget retina
+
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5)
+	.site-title
+		//Should be larger
+		// background: url(img/logo@2x.png) no-repeat center
+		// -webkit-background-size: 300px 70px 
+		// -o-background-size: 300px 70px 
+		// background-size: 300px 70px 
+		// height: 70px
+		

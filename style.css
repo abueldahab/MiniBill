@@ -1,0 +1,122 @@
+/* Theme Name: MiniBill
+ * Theme URI: http://github.com/billcolumbia/MiniBill
+ * Description: A minimal starting point for WordPress, adapted from Underscores.me
+ * Author: Bill Columbia
+ * Author URI: http://billcolumbia.com
+ * Version: 0.7
+ * Tags: minimal, underscores, fast, light
+ * License: None, feel free to hack :)
+ */
+/* line 13, sass/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 23, sass/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+/* line 26, sass/_reset.scss */
+body { line-height: 1; }
+
+/* line 29, sass/_reset.scss */
+ol, ul { list-style: none; }
+
+/* line 32, sass/_reset.scss */
+blockquote, q { quotes: none; }
+
+/* line 36, sass/_reset.scss */
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+/* line 40, sass/_reset.scss */
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* Text meant only for screen readers */
+/* line 2, sass/_small-menu.sass */
+.assistive-text { clip: rect(1px 1px 1px 1px); clip: rect(1px, 1px, 1px, 1px); position: absolute !important; }
+
+/* line 7, sass/_small-menu.sass */
+.main-navigation { clear: both; display: block; float: left; width: 100%; }
+
+/* line 13, sass/_small-menu.sass */
+.main-navigation ul { list-style: none; /*margin: 0 */ padding-left: 0; }
+
+/* line 18, sass/_small-menu.sass */
+.main-navigation li { float: left; position: relative; }
+
+/* line 22, sass/_small-menu.sass */
+.main-navigation a { display: block; text-decoration: none; }
+
+/* line 26, sass/_small-menu.sass */
+.main-navigation ul ul { -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2); box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2); display: none; float: left; position: absolute; position-top: 1.5em; position-left: 0; z-index: 99999; }
+
+/* line 37, sass/_small-menu.sass */
+.main-navigation ul ul ul { left: 100%; top: 0; }
+
+/* line 41, sass/_small-menu.sass */
+.main-navigation ul ul a { width: 200px; }
+
+/* line 52, sass/_small-menu.sass */
+.main-navigation ul li:hover > ul { display: block; }
+
+/* Small menu */
+/* line 60, sass/_small-menu.sass */
+.menu-toggle { cursor: pointer; }
+
+/* line 63, sass/_small-menu.sass */
+.main-small-navigation .menu { display: none; }
+
+<<<<<<< HEAD
+/* line 14, sass/style.sass */
+body { font-size: 16px; line-height: 24px; }
+
+/* line 18, sass/style.sass */
+.site-title { background: url(img/logo.png) no-repeat center; -webkit-background-size: 320px 73px; -o-background-size: 320px 73px; background-size: 320px 73px; height: 73px; margin: 20px 0; overflow: hidden; text-indent: 100%; white-space: nowrap; }
+
+/* line 30, sass/style.sass */
+.site-description { font-weight: normal; }
+
+/* line 33, sass/style.sass */
+.site-main { padding: 0 1em; }
+
+/* line 36, sass/style.sass */
+.main-small-navigation { font-size: 3em; line-height: 1em; text-align: center; }
+
+/* line 41, sass/style.sass */
+.app-store-button { max-width: 100%; }
+
+@media (min-width: 769px) { /* line 51, sass/style.sass */
+  h3 { font-size: 3em; } }
+=======
+/* line 19, sass/style.sass */
+body { background: #efefef; font-family: "Helvetica Neue"; font-size: 16px; line-height: 24px; color: rgba(0, 0, 50, 0.7); }
+
+/* line 26, sass/style.sass */
+h3 { color: #8fa419; font-size: 26px; font-weight: bold; line-height: 1em; margin: 0 0 12px 0; }
+
+/* line 33, sass/style.sass */
+p { margin: 0 0 2em 0; }
+
+/* line 36, sass/style.sass */
+li { margin: 0 0 1em 0; }
+
+/* line 39, sass/style.sass */
+.site-title { background: url(img/logo.png) no-repeat center; -webkit-background-size: 320px 73px; -o-background-size: 320px 73px; background-size: 320px 73px; height: 73px; margin: 20px 0; overflow: hidden; text-indent: 100%; white-space: nowrap; }
+
+/* line 51, sass/style.sass */
+.site-description { font-weight: normal; }
+
+/* line 55, sass/style.sass */
+.site-main { padding: 0 1em; }
+
+/* line 59, sass/style.sass */
+.main-small-navigation { font-size: 3em; line-height: 1em; text-align: center; }
+
+/* line 64, sass/style.sass */
+.app-store-button { max-width: 100%; }
+
+@media (min-width: 769px) { /* line 74, sass/style.sass */
+  h3 { font-size: 3em; }
+  /* line 76, sass/style.sass */
+  .site-title { background: url(img/logo@2x.png) no-repeat center; -webkit-background-size: 640px 147px; -o-background-size: 640px 147px; background-size: 640px 147px; height: 200px; } }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) { /* line 86, sass/style.sass */
+  .site-title { background: url(img/logo@2x.png) no-repeat center; -webkit-background-size: 300px 70px; -o-background-size: 300px 70px; background-size: 300px 70px; height: 70px; } }
+>>>>>>> a8de049669d63fbe1049967a7da356d18a2ffdc1
