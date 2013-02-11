@@ -1,0 +1,117 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+#ucfheader {
+	background: #000000 url("http://www.ucf.edu/img/header_border.png") repeat-x bottom;
+	height: 32px;
+	padding-top: 4px;
+	padding-bottom: 2px;
+	vertical-align: middle;
+}
+#ucfheader_wrap {
+	margin: 0 auto;
+	max-width: 1000px;
+	min-width: 320px;
+}
+#ucfheader h1 {
+	display: inline;
+}
+#ucfheader h1 a {
+	background: #000000 url("http://www.ucf.edu/imresources/sites/WWWUCFEDU/content/live/GLOBAL_PROPERTIES/0/GP1/en_US/ucflogo.png") no-repeat center center;
+	float: left;
+	height: 29px;
+	text-indent: -9999px;
+	width: 318px;
+}
+#ucfheader_forms {
+}
+#ucfheader_links {
+	float: right;
+	margin-top: 4px;
+	width: 130px;
+}
+#ucfheader_links select {
+	width: 130px;
+}
+#ucfheader_myUCF h1 a {
+	background: url("http://www.ucf.edu/img/myucf.png") no-repeat center center;
+	float: right;
+	text-indent: -9999px;
+	margin: 0 10px;
+	width: 60px;
+}
+#ucfheader_search {
+	float: right;
+	margin-top: 4px;
+	width: 120px;
+}
+#ucfheader_search input.text {
+	width: 100px;
+}
+#ucfheader_search input.submit {
+	margin-top: 2px;
+	vertical-align: top;
+}
+
+@media (max-width: 700px) {
+	#ucfheader_links {
+		display: none;
+	}
+}
+@media (max-width: 550px) {
+	#ucfheader_myUCF {
+		display: none;
+	}
+}
+@media (max-width: 460px) {
+	#ucfheader_search {
+		display: none;
+	}
+	#ucfheader h1 a {
+		width: 100%;
+	}
+}
