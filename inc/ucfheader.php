@@ -1,7 +1,8 @@
-		<link rel="stylesheet" type="text/css" href="ucfheader.css">
+
+		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/inc/ucfheader.css">
 		<div id="ucfheader">
 			<div id="ucfheader_wrap">
-				<h1><a href="http://ucf.edu/">University of Central Florida</a></h1>
+				<div id="ucfheader_title"><a href="http://ucf.edu/">University of Central Florida</a></div>
 				<form id="ucfheader_search" method="get" action="http://google.cc.ucf.edu/search" target="_top">
 					<fieldset> 
 						<input type="hidden" name="output" value="xml_no_dtd"/>
@@ -12,7 +13,7 @@
 						<input class="submit" type="image" alt="Search" src="http://www.ucf.edu/img/arrow.png" />
 					</fieldset>
 				</form>
-				<div id="ucfheader_myucf"><h1><a href="http://my.ucf.edu/">myUCF</a></h1></div>
+				<div id="ucfheader_myucf"><a href="http://my.ucf.edu/">myUCF</a></div>
 				<form id="ucfheader_links" action="" target="_top">
 					<fieldset>
 						<select name="UniversityLinks" id="UCFHeaderLinks" onchange="window.location.href= this.form.UniversityLinks.options[this.form.UniversityLinks.selectedIndex].value">
@@ -32,3 +33,4 @@
 				</form>
 			</div>
 		</div>
+
