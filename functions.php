@@ -14,6 +14,13 @@
 if ( ! isset( $content_width ) )
 	$content_width = 640; /* pixels */
 
+/**
+ * Use this to disable comments across the entire site.
+ * 
+ * @since themename 1.0
+ */
+$use_comments = false;
+
 if ( ! function_exists( 'minibill_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
