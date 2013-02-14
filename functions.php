@@ -15,11 +15,12 @@ if ( ! isset( $content_width ) )
 	$content_width = 640; /* pixels */
 
 /**
- * Use this to disable comments across the entire site.
+ * Use this to disable various things across the entire site.
  * 
  * @since themename 1.0
  */
 $use_comments = false;
+$use_sidebar = false;
 
 if ( ! function_exists( 'minibill_setup' ) ) :
 /**
@@ -87,14 +88,15 @@ add_action( 'after_setup_theme', 'minibill_setup' );
  * @since themename 1.0
  */
 function minibill_widgets_init() {
-	register_sidebar( array(
-		'name' => __( 'Sidebar', 'minibill' ),
-		'id' => 'sidebar-1',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget' => '</aside>',
-		'before_title' => '<h1 class="widget-title">',
-		'after_title' => '</h1>',
-	) );
+	if ($use_sidebar)
+		register_sidebar( array(
+			'name' => __( 'Sidebar', 'minibill' ),
+			'id' => 'sidebar-1',
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside>',
+			'before_title' => '<h1 class="widget-title">',
+			'after_title' => '</h1>',
+		) );
 }
 add_action( 'widgets_init', 'minibill_widgets_init' );
 
@@ -106,7 +108,7 @@ function minibill_scripts() {
 
 	wp_enqueue_script( 'small-menu', get_template_directory_uri() . '/js/small-menu.js', array( 'jquery' ), '20120206', true );
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+	if ( $use_comments && ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
